@@ -11,7 +11,7 @@
 # definition of outputs for this to be clarified..
 
 phyloseq_app <- shiny::runGitHub(repo = "shiny-phyloseq",
-                                 username = "joey711", 
+                                 username = "paulzierep", 
                                  launch.browser = FALSE, 
                                  port = 3838, 
                                  host = "0.0.0.0")
