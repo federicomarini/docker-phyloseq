@@ -9,6 +9,12 @@
 ```
 docker build . -t 'shiny-phyloseq'
 docker run -p 3838:3838 shiny-phyloseq
+docker run -v /home/paul/git/my-repositories/shiny-phyloseq/data:/shiny_input -p 3838:3838 shiny-phyloseq #with the hacked galaxy input
 ```
 
 Access on http://127.0.0.1:3838/
+
+## Ideas
+
+* just run ` shiny::runGitHub`; then kill it with `timeout` (https://stackoverflow.com/questions/48740277/error-using-timeout-command-invalid-time-interval)
+
